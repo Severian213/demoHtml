@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Severian213">
+        <meta name="description" content="A pratice page for some basic HTML skills.">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <title>Here lives Nicolas Cage</title>
+
+    </head>
+
+    <body>
+     <!-- Main heading of the page -->
+    <h1>Nicolas Cage Shrine</h1>
+    
+    <!-- Section describing my fake obsession with Nicolas Cage. Note - I am not actually obssesed! -->
+    <section>
+      <h2>My Obsession With Cage</h2>
+      <pre>Have I ever told you that I have a shrine to Nic Cage?
+The man is an <em>angel!</em>
+I have a <strong>big</strong> picture of his face tatooed on my back.</pre>
+    </section>
+
+    <!-- Section with images and a link to Nic's IMDB page -->
+    <section>
+      <h2>Mr. Cage On Display</h2>
+      <p>Here is where you can behold Mr. Cage in all his glory. View his beautiful face...and <a href="https://www.imdb.com/name/nm0000115/" target="_blank">his IMDB page</a>, if you wish.</p> 
+      <!-- container div for images -->
+      <div class="image-container">
+        <figure id="anger">
+          <img src="angryNic.jpeg" alt="Cage in a rage" width="750" height="422">
+          <figcaption id="bananas"></figcaption>
+        </figure>
+        <figure id="trigger">
+          <img src="nic2.jpg" alt="Cage uncaged" width="750" height="422">
+          <figcaption id="whathaveyou"></figcaption>
+        </figure>
+      </div>
+    </section>
+    
+    <!-- Section for the number guessing game -->
+    <section>
+      <h2>Wanna Play a Game With Nic?</h2>
+      <p>Nic is thinking of a number between 1 and 100. He thinks you can't guess his secret number. He will give you 7 tries. He's in a bad mood, but don't worry, we will let you know if your guess is too high or too low.</p>
+
+      <form id="guessForm" class="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type="text" id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+      </form>
+      
+      <!-- Paragraphs for the game stats -->
+      <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+        <div id="end"></div>
+      </div>
+ 
+      <!-- audio files for the events -->
+      <audio id="no" src="no.mp3"></audio>
+      <audio id="tooLate" src="tooLate.mp3"></audio>
+      <audio id="wrong" src="wrong.mp3"></audio>
+      <audio id="shame" src="shame.mp3"></audio>
+      <audio id="noThree" src="noThree.mp3"></audio>
+      <audio id="noLoud" src="noloud.mp3"></audio>
+      <audio id="laugh" src="laugh.mp3"></audio>
+      <audio id="highAudio" src="hi.mp3"></audio>
+      <audio id="correctGuessAudio" src="badWord.mp3"></audio>
+    </section>
+    <script src="script.js" defer></script>
+    </body>
+</html>
